@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tarjetas de Testimonios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    />
+</head>
+<body>
+    <header>
+       <div>
+        <h1 class="logo">TCG</h1><span class="logo-version">v1</span>
+       </div>
+
+        <div class="social">
+            <a href="https://x.com/hernandoabella" title="X">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/hernandoabella/testimonial-card-generator" title="Github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </header>
+    <section class="hero-section">
+        <h1>Testimonial Card Generator</h1>
+    <p>Create stunning cards testimonials for your awesome products</p>
+    </section>
+
+    <div class="flex align-center justify-center gap">
+        <div>
+            <button id="generate-testimonial-btn"><i class="fa-regular fa-face-hand-peeking"></i> Generate Testimonial Cards</button>
+            <button id="download-all-btn"><i class="fa-regular fa-download"></i> Download Cards</button>
+        </div>
+        <div class="themes">
+            <div class="bg-light-theme"></div>
+            <div class="bg-dark-theme"></div>
+            <div class="bg-cupcake"></div>
+            <div class="bg-synthwave"></div>
+            <div class="bg-retro"></div>
+            <div class="bg-cyberpunk"></div>
+            <div class="bg-valentine"></div>
+            <div class="bg-forest"></div>
+            <div class="bg-aqua"></div>
+            <div class="bg-coffee" onclick="bgcoffee()"></div>
+        </div>
+    </div>
+
+    <div id="testimonial-container">
+        <!-- Tarjeta 1 -->
+        <div class="testimonial-card">
+            <div class="flex justify-center gap">
+                <div class="w-40">
+                    <div class="bg-wuao flex">
+                        <img src="1.jpg" alt="User 1" id="user-image-1">
+                    </div>
+                </div>
+                <div class="flex col justify-center w-60">
+                    <h2 class="card-name">Konsta Hanninen</h2>
+                    <p class="job-title">DevOps Engineer</p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="left-div">
+                <div>
+                    <i class="gray fa-regular fa-quote-left font-big"></i> 
+                </div>
+                <p id="testimonial-text-1" class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div>
+                    <i class="gray fa-regular fa-quote-right font-big"></i> 
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="testimonial-card">
+            <div class="flex justify-center gap">
+                <div class="w-40">
+                    <div class="bg-wuao flex">
+                        <img src="2.jpg" alt="User 1" id="user-image-1">
+                    </div>
+                </div>
+                <div class="flex col justify-center w-60">
+                    <h2 class="card-name">Gilda Denker</h2>
+                    <p class="job-title">UX Researcher</p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="left-div">
+                <div>
+                    <i class="gray fa-regular fa-quote-left font-big"></i> 
+                </div>
+                <p id="testimonial-text-1" class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div>
+                    <i class="gray fa-regular fa-quote-right font-big"></i> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="testimonial-card">
+            <div class="flex justify-center gap">
+                <div class="w-40">
+                    <div class="bg-wuao flex">
+                        <img src="3.jpg" alt="User 1" id="user-image-1">
+                    </div>
+                </div>
+                <div class="flex col justify-center w-60">
+                    <h2 class="card-name">Morgane Jean</h2>
+                    <p class="job-title">Web Developer</p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="left-div">
+                <div>
+                    <i class="gray fa-regular fa-quote-left font-big"></i> 
+                </div>
+                <p id="testimonial-text-1" class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div>
+                    <i class="gray fa-regular fa-quote-right font-big"></i> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+       
+        <footer>
+           <p>
+            <b>Author:</b> Hernando Abella
+           </p>
+        </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
