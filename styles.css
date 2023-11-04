@@ -7,11 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
--webkit-animation: AnimationName 3s ease infinite;
-    -moz-animation: AnimationName 3s ease infinite;
-    animation: AnimationName 3s ease infinite;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
 header {
@@ -110,6 +106,10 @@ button {
     height: 20px;
     cursor: pointer;
     border-radius: 100%;
+}
+
+.themes div:active {
+    transform: scale(1.5);
 }
 
 .flex {
@@ -212,24 +212,16 @@ button {
     width: 60%;
 }
 
+#testimonial-container {
+    border-radius: 15px;
+    background: #E5E6E6;
+    padding: 10px;
+    width: 90%;
+    margin: 20px auto;
+}
+
 footer {
     padding: 20px;
-    display: flex;
     color: #fff;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
