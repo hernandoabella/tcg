@@ -339,11 +339,22 @@ function bgCoffee() {
 }
 
 const testimonios = [
-    "Este producto cambió mi vida. ¡Lo recomiendo altamente!",
-    "La calidad de este servicio es excepcional. No puedo estar más satisfecho.",
-    "Nunca pensé que encontraría un producto tan increíble. ¡Estoy impresionado!",
-    "El soporte al cliente es excelente. Resolvieron mi problema rápidamente.",
-    "Definitivamente compraré de nuevo. Este producto vale cada centavo."
+    "This product has truly changed my life. I highly recommend it to anyone looking for a solution to their needs. The quality and performance are outstanding, and I couldn't be more satisfied with the results.",
+    "I've had the opportunity to experience many services, but this one stands out for its exceptional quality. From customer support to overall performance, I can't praise it enough.",
+    "When I discovered this product, I was genuinely impressed. I never thought I'd find such an incredible solution. It's worth every penny, and I can't imagine my life without it now.",
+    "The customer support team is not only responsive but also incredibly helpful. They resolved my issue quickly and efficiently, which made my experience even better.",
+    "After my first purchase, I knew I would definitely buy again. This product consistently delivers and has become an essential part of my life.",
+    "Outstanding service! From the moment I started using this service, I've been thrilled with the results. It's a game-changer that I highly recommend to everyone.",
+    "This product exceeded my expectations in every way. The quality and reliability are top-notch. It has made a significant difference in my life, and I couldn't be happier.",
+    "I'm genuinely impressed with this service. It has a unique edge that sets it apart from the rest. I'm a delighted customer who will continue to enjoy the benefits it offers.",
+    "The support team is fantastic and always goes above and beyond. They are a big reason for my satisfaction with this product, and I appreciate their dedication.",
+    "I can't express enough how this product has transformed my life. The results speak for themselves, and I'm grateful for having found it. I highly recommend it to others.",
+    "The level of service offered is nothing short of exceptional. This product is a wise investment, and I'm extremely satisfied with the outstanding results it has provided.",
+    "I've had a flawless experience with this product. It has exceeded my expectations in terms of quality and performance. I'm a very happy customer who will keep using it.",
+    "I'm extremely satisfied with the quality and performance of this product. It has proven to be a must-have for anyone looking for a reliable solution.",
+    "I have encountered many products, but this one is truly outstanding. It has made a significant impact on my life, and I can't speak highly enough about its excellence.",
+    "This product is worth every penny spent. The customer service is second to none, and the results are fantastic. I'm a delighted customer and would choose it again.",
+    "I've been using this product for a while, and I can confidently say that you won't regret choosing it. It's a fantastic solution that consistently delivers impressive results.",
 ];
 
 // Array de cargos
@@ -387,15 +398,23 @@ document.getElementById('generate-testimonial-btn').addEventListener('click', ()
     const testimonialContainer = document.getElementById('testimonial-container');
     testimonialContainer.innerHTML = ''; // Limpiamos las tarjetas existentes
 
+    const usedTestimonios = []; // Array para rastrear los testimonios utilizados
+
     for (let i = 0; i < 3; i++) {
         // Realizar una solicitud a la API para obtener un usuario aleatorio
         fetch('https://randomuser.me/api/')
             .then(response => response.json())
             .then(data => {
                 const user = data.results[0];
-
-                // Seleccionar un cargo aleatorio del array
                 const randomJobTitle = jobTitles[Math.floor(Math.random() * jobTitles.length)];
+
+                // Seleccionar un testimonio aleatorio que no se haya utilizado
+                let randomTestimonial;
+                do {
+                    randomTestimonial = testimonios[Math.floor(Math.random() * testimonios.length)];
+                } while (usedTestimonios.includes(randomTestimonial));
+
+                usedTestimonios.push(randomTestimonial); // Marcar el testimonio como utilizado
 
                 // Crear una tarjeta de testimonio con la estructura HTML existente
                 const card = document.createElement('div');
@@ -424,7 +443,7 @@ document.getElementById('generate-testimonial-btn').addEventListener('click', ()
                         <div>
                             <i class="gray fa-regular fa-quote-left font-big"></i> 
                         </div>
-                        <p id="testimonial-text-1" class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p id="testimonial-text-1" class="testimonial-text">${randomTestimonial}</p>
                         <div>
                             <i class="gray fa-regular fa-quote-right font-big"></i> 
                         </div>
@@ -435,6 +454,8 @@ document.getElementById('generate-testimonial-btn').addEventListener('click', ()
             });
     }
 });
+
+
 
 document.getElementById('download-all-btn').addEventListener('click', () => {
     const testimonialCards = document.querySelectorAll('.testimonial-card');
