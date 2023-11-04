@@ -1,4 +1,4 @@
-function bgcoffee() {
+function bgLight() {
     const testimonialCards = document.querySelectorAll('.testimonial-card');
     
     testimonialCards.forEach(card => {
@@ -11,26 +11,331 @@ function bgcoffee() {
         const testimonialText = card.querySelector(".testimonial-text");
         
         // Cambia los estilos de cada elemento dentro de la tarjeta
-        circle.style.backgroundColor = "red";
-        name.style.color = "blue";
-        jobTitle.style.fontWeight = "bold";
-        stars.forEach(star => star.style.color = "gold");
-        rightQuote.style.color = "green";
-        leftQuote.style.color = "green";
-        testimonialText.style.fontSize = "18px";
+        circle.style.backgroundColor = "#F000B8";
+        name.style.color = "#2B3440";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#2B3440";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#2B3440");
+        rightQuote.style.color = "#1DCDBC";
+        leftQuote.style.color = "#1DCDBC";
+        testimonialText.style.color = "#2B3440";
 
         // Cambia el fondo de la tarjeta
-        card.style.backgroundColor = "lightgray";
-        card.style.border = "1px solid black";
-        card.style.padding = "10px";
-        card.style.margin = "10px";
-        card.style.boxShadow = "3px 3px 5px gray";
+        card.style.backgroundColor = "#FFFFFF";
+        card.style.border = "1px solid #F9F7FD";
     });
 
     // También puedes cambiar los estilos del contenedor de tarjetas
     const testimonialContainer = document.getElementById('testimonial-container');
-    testimonialContainer.style.backgroundColor = 'lightgray';
-    testimonialContainer.style.padding = '20px';
+    testimonialContainer.style.backgroundColor = '#E5E6E6';
+}
+
+function bgDark() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#6419E6";
+        name.style.color = "#A6ADBA";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#A6ADBA";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#1FB2A6");
+        rightQuote.style.color = "#D926A9";
+        leftQuote.style.color = "#D926A9";
+        testimonialText.style.color = "#A6ADBA";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#1D232A";
+        card.style.border = "1px solid #F9F7FD";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#15191E';
+}
+
+function bgCupCake() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#EF9FBC";
+        name.style.color = "#2F2327";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#2F2327";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#EEAF3A");
+        rightQuote.style.color = "#65C3C8";
+        leftQuote.style.color = "#65C3C8";
+        testimonialText.style.color = "#2F2327";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#FAF7F5";
+        card.style.border = "1px solid #D0CAD3";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#E7E2DF';
+}
+
+function bgcSynthWave() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#E779C1";
+        name.style.color = "#F9F7FD";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#F9F7FD";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#F3CC30");
+        rightQuote.style.color = "#58C7F3";
+        leftQuote.style.color = "#58C7F3";
+        testimonialText.style.color = "#F9F7FD";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#1A103C";
+        card.style.border = "1px solid #F9F7FD";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#0E0920';
+}
+
+function bgRetro() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#A4CBB4";
+        name.style.color = "#2E282A";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#2E282A";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#DC8850");
+        rightQuote.style.color = "#2E282A";
+        leftQuote.style.color = "#2E282A";
+        testimonialText.style.color = "#423F00";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#E4D8B4";
+        card.style.border = "1px solid #2E282A";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#D4BF87';
+}
+
+function bgCyberPunk() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#75D1F0";
+        name.style.color = "#302D12";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#302D12";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#FF7598");
+        rightQuote.style.color = "#C07EEC";
+        leftQuote.style.color = "#C07EEC";
+        testimonialText.style.color = "#423F00";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#FFEE00";
+        card.style.border = "1px solid #423F00";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#B8AB00';
+}
+
+function bgValentine() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#88DCDD";
+        name.style.color = "#815160";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#815160";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#E96D7B");
+        rightQuote.style.color = "#A992F7";
+        leftQuote.style.color = "#A992F7";
+        testimonialText.style.color = "#815160";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#F0D6E8";
+        card.style.border = "1px solid #815160";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#DDA2CB';
+}
+
+function bgForest() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#1EB854";
+        name.style.color = "#132522";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#18342B";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#18342B");
+        rightQuote.style.color = "#18342B";
+        leftQuote.style.color = "#18342B";
+        testimonialText.style.color = "#132522";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#1DB9AC";
+        card.style.border = "1px solid #CBD2CF";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#171212';
+}
+
+function bgAqua() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#2B4D8C";
+        name.style.color = "#DCE7F4";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#DCE7F4";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#FFE999");
+        rightQuote.style.color = "#09E9F1";
+        leftQuote.style.color = "#09E9F1";
+        testimonialText.style.color = "#DCE7F4";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#345CA8";
+        card.style.border = "1px solid #DCE7F4";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#233E71';
+}
+
+function bgCoffee() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        const circle = card.querySelector(".bg-wuao");
+        const name = card.querySelector(".card-name");
+        const jobTitle = card.querySelector(".job-title");
+        const stars = card.querySelectorAll(".fa-star");
+        const rightQuote = card.querySelector(".fa-quote-right");
+        const leftQuote = card.querySelector(".fa-quote-left");
+        const testimonialText = card.querySelector(".testimonial-text");
+        
+        // Cambia los estilos de cada elemento dentro de la tarjeta
+        circle.style.backgroundColor = "#11596F";
+        name.style.color = "#D1DCE0";
+        name.style.fontSize = "1.5em";
+        name.style.fontWeight = "bold";
+        jobTitle.style.color = "#746D63";
+        jobTitle.style.fontSize = "1em";
+        stars.forEach(star => star.style.color = "#DC944C");
+        rightQuote.style.color = "#263F40";
+        leftQuote.style.color = "#263F40";
+        testimonialText.style.color = "#D1DCE0";
+
+        // Cambia el fondo de la tarjeta
+        card.style.backgroundColor = "#211720";
+        card.style.border = "1px solid #746D63";
+    });
+
+    // También puedes cambiar los estilos del contenedor de tarjetas
+    const testimonialContainer = document.getElementById('testimonial-container');
+    testimonialContainer.style.backgroundColor = '#0C080C';
 }
 
 const testimonios = [
