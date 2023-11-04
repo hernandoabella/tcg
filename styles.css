@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+-webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social i{
+    color: #333;
+    font-size: 1.5em;
+}
+
+.logo {
+    font-family: "Agbalumo";
+    color: #fff;
+}
+
+.logo-version {
+    position: relative;
+    top: -42px;
+    left: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-section h1{
+    font-size: 3em;
+  background: -webkit-linear-gradient(#51186c,  #4158D0 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-section p {
+    color: #fff;
+    font-size: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #4158D0;
+    color: #fff;
+    border: none;
+}
+
+#testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-card {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+button {
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.themes {
+    background-color: #4158D0;
+    background-image: linear-gradient(160deg, #4158D0 0%, #80D0C7 100%);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.themes div{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.bg-wuao {
+    background: rgb(214, 214, 214);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.card-name {
+    padding: 5px 0px;
+}
+
+.stars {
+    padding: 10px 0px;
+}
+
+.font-big {
+    font-size: 30px;
+    text-align: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.left-div {
+    margin-top: 20px;
+}
+
+.gray {
+    color: rgb(159, 159, 159);
+}
+
+.card-name {
+    color: #000;
+}
+.job-title {
+    color: #555;
+}
+.testimonial-text {
+    text-align: justify;
+}
+
+.bg-light-theme {
+	background: #FFFFFF;
+} 
+.bg-dark-theme {
+	background: #1D232A;
+} 
+.bg-cupcake {
+	background: #FAF7F5;
+} 
+.bg-synthwave {
+	background: #1A103C;
+} 
+.bg-retro {
+	background: #E4D8B4;
+} 
+.bg-cyberpunk {
+	background: #FFEE00;
+} 
+.bg-valentine {
+	background: #F0D6E8;
+} 
+.bg-forest {
+	background: #171212;
+} 
+.bg-aqua {
+	background: #345CA8;
+} 
+.bg-coffee {
+	background: #211720;
+}
+
+.fa-quote-right {
+    float: right;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    color: #fff;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
