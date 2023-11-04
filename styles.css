@@ -78,7 +78,6 @@ button {
 }
 
 img {
-    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -223,3 +222,25 @@ footer {
     color: #fff;
 }
 
+@media only screen and (max-width: 1200px) {
+    .hero-section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .functionalities{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #testimonial-container {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    footer p {
+        width: 90%;
+    }
+}
