@@ -1,3 +1,31 @@
+function loadTheme() {
+    const selectedTheme = localStorage.getItem('selectedTheme');
+    
+    if (selectedTheme === 'light') {
+        bgLight();
+    } else if (selectedTheme === 'dark') {
+        bgDark();
+    } else if (selectedTheme === 'cupcake') {
+        bgCupCake();
+    }
+    // Agrega condiciones para otros temas aquí si los tienes
+}
+
+function applyLightTheme() {
+    localStorage.setItem('selectedTheme', 'light');
+    bgLight();
+}
+
+function applyDarkTheme() {
+    localStorage.setItem('selectedTheme', 'dark');
+    bgDark();
+}
+
+function applyCupCakeTheme() {
+    localStorage.setItem('selectedTheme', 'cupcake');
+    bgCupCake();
+}
+
 function bgLight() {
     const testimonialCards = document.querySelectorAll('.testimonial-card');
     
