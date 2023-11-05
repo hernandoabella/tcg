@@ -1,16 +1,17 @@
+// Función para cargar el tema almacenado en localStorage
 function loadTheme() {
     const selectedTheme = localStorage.getItem('selectedTheme');
-    
+
     if (selectedTheme === 'light') {
-        bgLight();
+        applyLightTheme();
     } else if (selectedTheme === 'dark') {
-        bgDark();
+        applyDarkTheme();
     } else if (selectedTheme === 'cupcake') {
-        bgCupCake();
+        applyCupCakeTheme();
     }
-    // Agrega condiciones para otros temas aquí si los tienes
 }
 
+// Funciones para aplicar los temas
 function applyLightTheme() {
     localStorage.setItem('selectedTheme', 'light');
     bgLight();
@@ -25,6 +26,14 @@ function applyCupCakeTheme() {
     localStorage.setItem('selectedTheme', 'cupcake');
     bgCupCake();
 }
+
+// Event listeners para cambiar el tema
+document.getElementById('light-theme-btn').addEventListener('click', applyLightTheme);
+document.getElementById('dark-theme-btn').addEventListener('click', applyDarkTheme);
+document.getElementById('cupcake-theme-btn').addEventListener('click', applyCupCakeTheme);
+
+// Llama a la función para cargar el tema al cargar la página
+loadTheme();
 
 function bgLight() {
     const testimonialCards = document.querySelectorAll('.testimonial-card');
