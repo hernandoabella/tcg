@@ -431,13 +431,21 @@ const jobTitles = [
     "Sales Representative"
 ];
 
-document.getElementById('generate-testimonial-btn').addEventListener('click', () => {
+const generateButton = document.getElementById('generate-testimonial-btn');
+
+generateButton.addEventListener('click', () => {
+    // Desactiva el botón para evitar clics adicionales mientras se generan tarjetas
+    generateButton.disabled = true;
+
     const testimonialContainer = document.getElementById('testimonial-container');
     testimonialContainer.innerHTML = ''; // Limpiamos las tarjetas existentes
 
     const usedTestimonios = []; // Array para rastrear los testimonios utilizados
 
-    for (let i = 0; i < 3; i++) {
+    // Contador para rastrear cuántas tarjetas se han creado
+    let cardsCreated = 0;
+
+    const createCard = () => {
         // Realizar una solicitud a la API para obtener un usuario aleatorio
         fetch('https://randomuser.me/api/')
             .then(response => response.json())
@@ -475,7 +483,7 @@ document.getElementById('generate-testimonial-btn').addEventListener('click', ()
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="left-div">
                         <div>
                             <i class="gray fa-regular fa-quote-left font-big"></i> 
@@ -489,8 +497,21 @@ document.getElementById('generate-testimonial-btn').addEventListener('click', ()
 
                 testimonialContainer.appendChild(card);
                 loadTheme();
+
+                cardsCreated++;
+
+                // Si se han creado las 3 tarjetas, vuelve a habilitar el botón
+                if (cardsCreated === 3) {
+                    generateButton.disabled = false;
+                } else {
+                    // Si no se han creado las 3 tarjetas, crea la siguiente
+                    createCard();
+                }
             });
-    }
+    };
+
+    // Comienza el proceso de creación de tarjetas
+    createCard();
 });
 
 
