@@ -488,6 +488,7 @@ document.getElementById('generate-testimonial-btn').addEventListener('click', ()
                 `;
 
                 testimonialContainer.appendChild(card);
+                loadTheme();
             });
     }
 });
