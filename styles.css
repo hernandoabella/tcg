@@ -70,6 +70,13 @@ button {
     border: none;
 }
 
+#testimonial-container {
+    border-radius: 15px;
+    background: #E5E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .testimonial-card {
     width: 400px;
@@ -108,7 +115,17 @@ button {
 }
 
 .themes div:active {
-    transform: scale(1.5);
+    transform: scale(1.1);
+}
+.themes div:active:nth-child(1) {
+    transform: none;
+}
+
+.themes-icon i {
+    color: #fff;
+    cursor:auto;
+    border-right: 1px solid #fff;
+    padding-right: 5px;
 }
 
 .flex {
@@ -211,16 +228,7 @@ button {
     width: 60%;
 }
 
-#testimonial-container {
-    border-radius: 15px;
-    background: #E5E6E6;
-    padding: 10px;
-    width: 1200px;
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+
 
 footer {
     padding: 20px;
@@ -231,8 +239,61 @@ footer {
     justify-content: space-around;
 }
 
-.tooltip-container {
-    --background: #0E0B0F;
+.tooltip-container1 {
+    --background: #fff;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+   
+    
+  }
+  .tooltip1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000;
+    
+  }
+  
+  .tooltip1::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+    z-index: 1;
+    border: 1px solid #000;
+  }
+  
+  .tooltip-container1:hover .tooltip1 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container1:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container2 {
+    --background: #1D232A;
     position: relative;
     background: var(--background);
     cursor: pointer;
@@ -241,7 +302,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #fff;
   }
-  .tooltip {
+  .tooltip2 {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -256,7 +317,7 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .tooltip::before {
+  .tooltip2::before {
     position: absolute;
     content: "";
     height: 0.6em;
@@ -267,15 +328,114 @@ footer {
     background: var(--background);
   }
   
-  .tooltip-container:hover .tooltip {
+  .tooltip-container2:hover .tooltip2 {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(-50%) scale(1);
   }
-  .tooltip-container:hover {
+  .tooltip-container2:hover {
     transform: scale(0.9);
+}
+
+.tooltip-container3 {
+    --background: #FAF7F5;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  .tooltip3 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip3::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container3:hover .tooltip3 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container3:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container10 {
+    --background: #0E0B0F;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  .tooltip10 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip10::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container10:hover .tooltip10 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container10:hover {
+    transform: scale(0.9);
+}
+
+.functionalities {
+    background: rgb(214, 214, 214);
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -289,6 +449,7 @@ footer {
     .hero-section {
         width: 90%;
         margin: auto;
+        padding: 20px 0px;
     }
 
     .functionalities{
@@ -296,6 +457,7 @@ footer {
         width: 90%;
         margin: auto;
         text-align: center;
+        
     }
 
     #testimonial-container {
