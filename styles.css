@@ -264,8 +264,6 @@ footer {
     background: var(--background);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #000;
-    
   }
   
   .tooltip1::before {
@@ -278,7 +276,7 @@ footer {
     transform: translate(-50%) rotate(45deg);
     background: var(--background);
     z-index: 1;
-    border: 1px solid #000;
+    
   }
   
   .tooltip-container1:hover .tooltip1 {
@@ -383,6 +381,288 @@ footer {
     transform: translateX(-50%) scale(1);
   }
   .tooltip-container3:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container4 {
+    --background: #1A103C;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  .tooltip4 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip4::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container4:hover .tooltip4 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container4:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container5 {
+    --background: #E4D8B4;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  .tooltip5 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip5::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container5:hover .tooltip5 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container5:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container6 {
+    --background: #FFEE00;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  .tooltip6 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip6::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container6:hover .tooltip6 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container6:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container7 {
+    --background: #F0D6E8;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  .tooltip7 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip7::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container7:hover .tooltip7 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container7:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container8 {
+    --background: #171212;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  .tooltip8 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip8::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container8:hover .tooltip8 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container8:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container9 {
+    --background: #345CA8;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  .tooltip9 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip9::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+  }
+  
+  .tooltip-container9:hover .tooltip9 {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+  .tooltip-container9:hover {
     transform: scale(0.9);
 }
 
