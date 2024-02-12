@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -121,6 +123,7 @@ button {
 .themes div:active {
   transform: scale(1.1);
 }
+
 .themes div:active:nth-child(1) {
   transform: none;
 }
@@ -182,9 +185,11 @@ button {
 .card-name {
   color: #000;
 }
+
 .job-title {
   color: #555;
 }
+
 .testimonial-text {
   text-align: justify;
 }
@@ -192,30 +197,39 @@ button {
 .bg-light-theme {
   background: #ffffff;
 }
+
 .bg-dark-theme {
   background: #1d232a;
 }
+
 .bg-cupcake {
   background: #faf7f5;
 }
+
 .bg-synthwave {
   background: #1a103c;
 }
+
 .bg-retro {
   background: #e4d8b4;
 }
+
 .bg-cyberpunk {
   background: #ffee00;
 }
+
 .bg-valentine {
   background: #f0d6e8;
 }
+
 .bg-forest {
   background: #171212;
 }
+
 .bg-aqua {
   background: #345ca8;
 }
+
 .bg-coffee {
   background: #211720;
 }
@@ -251,6 +265,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #000;
 }
+
 .tooltip1 {
   position: absolute;
   top: 100%;
@@ -285,6 +300,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container1:hover {
   transform: scale(0.9);
 }
@@ -299,6 +315,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+
 .tooltip2 {
   position: absolute;
   top: 100%;
@@ -332,6 +349,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container2:hover {
   transform: scale(0.9);
 }
@@ -346,6 +364,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #000;
 }
+
 .tooltip3 {
   position: absolute;
   top: 100%;
@@ -379,6 +398,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container3:hover {
   transform: scale(0.9);
 }
@@ -393,6 +413,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+
 .tooltip4 {
   position: absolute;
   top: 100%;
@@ -426,6 +447,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container4:hover {
   transform: scale(0.9);
 }
@@ -440,6 +462,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #000;
 }
+
 .tooltip5 {
   position: absolute;
   top: 100%;
@@ -473,6 +496,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container5:hover {
   transform: scale(0.9);
 }
@@ -487,6 +511,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #000;
 }
+
 .tooltip6 {
   position: absolute;
   top: 100%;
@@ -520,6 +545,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container6:hover {
   transform: scale(0.9);
 }
@@ -534,6 +560,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #000;
 }
+
 .tooltip7 {
   position: absolute;
   top: 100%;
@@ -567,6 +594,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container7:hover {
   transform: scale(0.9);
 }
@@ -581,6 +609,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+
 .tooltip8 {
   position: absolute;
   top: 100%;
@@ -614,6 +643,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container8:hover {
   transform: scale(0.9);
 }
@@ -628,6 +658,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+
 .tooltip9 {
   position: absolute;
   top: 100%;
@@ -661,6 +692,7 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container9:hover {
   transform: scale(0.9);
 }
@@ -675,6 +707,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+
 .tooltip10 {
   position: absolute;
   top: 100%;
@@ -708,13 +741,9 @@ footer {
   pointer-events: auto;
   transform: translateX(-50%) scale(1);
 }
+
 .tooltip-container10:hover {
   transform: scale(0.9);
-}
-
-.functionalities {
-  background: rgb(214, 214, 214);
-  border-radius: 15px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -733,20 +762,16 @@ footer {
 
   .functionalities {
     flex-direction: column;
-    width: 90%;
-    margin: auto;
     text-align: center;
   }
 
   #testimonial-container {
     flex-wrap: wrap;
-    width: 90%;
   }
 
   footer {
     position: relative;
   }
 
-  footer p {
-  }
+  footer p {}
 }
